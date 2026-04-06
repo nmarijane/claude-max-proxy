@@ -1,0 +1,14 @@
+[project]
+name = "claude-max-proxy"
+version = "1.0.0"
+description = "Drop-in fix for OpenClaw — route agents through Claude Code CLI on your Max subscription"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "claude-agent-sdk",
+    "aiohttp",
+]
+
+[project.scripts]
+claude-max-proxy = "claude_max_proxy.proxy:cli"
