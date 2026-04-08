@@ -14,7 +14,11 @@ After (this script):
 
 ## Install & Run
 
-### Node.js (npm)
+> **Pick one.** Node.js and Python are two ways to run the exact same proxy — choose whichever you already have installed. You do **not** need both.
+
+### Option A — Node.js (npm)
+
+Requires Node.js 18+.
 
 ```bash
 npx claude-max-proxy
@@ -27,7 +31,9 @@ npm i -g claude-max-proxy
 claude-max-proxy
 ```
 
-### Python (pip)
+### Option B — Python (pip)
+
+Requires Python 3.10+.
 
 ```bash
 git clone https://github.com/nmarijane/claude-max-proxy
@@ -99,8 +105,7 @@ OPENCLAW_CONFIG=/path/to/config claude-max-proxy
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated
 - Claude Max subscription
 - [OpenClaw](https://github.com/openclaw/openclaw) with `openclaw.json`
-- **Node.js version:** Node.js 18+ (for npm install)
-- **Python version:** Python 3.10+ (for pip install)
+- **Node.js 18+** or **Python 3.10+** (one of the two, see Install above)
 
 ## Limitations
 
