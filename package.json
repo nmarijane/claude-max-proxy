@@ -1,0 +1,37 @@
+{
+  "name": "claude-max-proxy",
+  "version": "1.0.0",
+  "description": "Drop-in fix for OpenClaw — route agents through Claude Code CLI on your Max subscription",
+  "type": "module",
+  "main": "dist/proxy.js",
+  "bin": {
+    "claude-max-proxy": "dist/proxy.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/proxy.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "openclaw",
+    "claude",
+    "claude-code",
+    "claude-max",
+    "proxy",
+    "agent"
+  ],
+  "author": "Nicolas Meridjen",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.94"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

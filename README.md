@@ -14,15 +14,29 @@ After (this script):
 
 ## Install & Run
 
+### Node.js (npm)
+
+```bash
+npx claude-max-proxy
+```
+
+Or install globally:
+
+```bash
+npm i -g claude-max-proxy
+claude-max-proxy
+```
+
+### Python (pip)
+
 ```bash
 git clone https://github.com/nmarijane/claude-max-proxy
 cd claude-max-proxy
 pip install .
-
-claude --version  # make sure Claude Code is logged in
-
 claude-max-proxy
 ```
+
+### Output
 
 ```
 $ claude-max-proxy
@@ -82,10 +96,11 @@ OPENCLAW_CONFIG=/path/to/config claude-max-proxy
 
 ## Requirements
 
-- Python 3.10+
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated
 - Claude Max subscription
 - [OpenClaw](https://github.com/openclaw/openclaw) with `openclaw.json`
+- **Node.js version:** Node.js 18+ (for npm install)
+- **Python version:** Python 3.10+ (for pip install)
 
 ## Limitations
 
